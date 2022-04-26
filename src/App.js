@@ -19,8 +19,22 @@ searchMovies('Superman')
 
 
   return (
-    <div className="App">
+    <div className="app">
 <h1> Movies Database </h1>
+
+<div className='search'>
+<input 
+placeholder='Search for movies'
+value="Superman"
+onChange={() => {}}
+/>
+
+<img 
+src={SearchIcon}
+alt='search' 
+/>
+
+</div>
     </div>
   );
 }
