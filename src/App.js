@@ -1,8 +1,21 @@
+import { useEffect } from 'react';
 import './App.css';
 
 function App() {
 
   const API_URL = 'http://www.omdbapi.com?apikey=b8d1252e';
+
+const searchMovies = async (title) => {
+const res = await fetch (`${API_URL} &s=${title}`);
+const data = await res.json() 
+
+console.log((data.Search));
+  }
+
+  useEffect(() => { 
+searchMovies('Superman')
+  },[])
+
 
   return (
     <div className="App">
