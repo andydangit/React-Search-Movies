@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
+import SearchIcon from './Search.svg'
 
 function App() {
 
