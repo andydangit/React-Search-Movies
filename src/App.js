@@ -6,6 +6,16 @@ function App() {
 
   const API_URL = 'http://www.omdbapi.com?apikey=b8d1252e';
 
+  // static data temp
+  const moive1 = 
+  {
+      "Title": "Superman/Batman: Public Enemies",
+      "Year": "2009",
+      "imdbID": "tt1398941",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZDc5NTFiMzgtZWJiOS00N2M1LWJmOGYtZmNjMzFhMzcxZjRiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+  }
+
 const searchMovies = async (title) => {
 const res = await fetch (`${API_URL} &s=${title}`);
 const data = await res.json() 
@@ -32,9 +42,15 @@ onChange={() => {}}
 <img 
 src={SearchIcon}
 alt='search' 
+onClick={() => {}}
 />
 
 </div>
+<div className="container">
+
+
+</div>
+
     </div>
   );
 }
