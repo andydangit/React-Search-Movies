@@ -7,7 +7,7 @@ function App() {
   const API_URL = 'http://www.omdbapi.com?apikey=b8d1252e';
 
   // static data temp
-  const moive1 = 
+  const movie1 = 
   {
       "Title": "Superman/Batman: Public Enemies",
       "Year": "2009",
@@ -47,7 +47,14 @@ onClick={() => {}}
 
 </div>
 <div className="container">
-
+<div className='movie'>
+  <div>
+    <p>{movie1.Year}</p>
+    </div>  
+<div>
+  <img src={movie1.Poster !== 'N/A' ? movie1.Poster :'https://via.placeholder.com/400'} alt = {movie1.Title} />
+  </div> 
+</div>
 
 </div>
 
